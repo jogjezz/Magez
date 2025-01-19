@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: postgres
+    database: postgres
+    schema: public
+    tables:
+      - name: covid19_confirmed
+      - name: covid19_recovered
+      - name: covid19_deaths

@@ -1,0 +1,1 @@
+{"province_state": "str", "country_region": "str", "lats": "Decimal", "longs": "Decimal", "date": "str", "confirmed": "int64", "recovered": "int64", "deaths": "int64"}

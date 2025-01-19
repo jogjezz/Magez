@@ -1,0 +1,13 @@
+sources:
+- description: Dataframes Mage upstream blocks
+  loader: mage
+  name: mage_demo
+  schema: public
+  tables:
+  - description: Dataframe for block `store_data` of the `dbt_demo` mage pipeline.
+    identifier: mage_dbt_demo_store_data
+    meta:
+      block_uuid: store_data
+      pipeline_uuid: dbt_demo
+    name: dbt_demo_store_data
+version: 2

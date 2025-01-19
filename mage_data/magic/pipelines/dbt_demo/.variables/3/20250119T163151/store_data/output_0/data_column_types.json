@@ -1,0 +1,1 @@
+{"province_state": "str", "country_region": "str", "lats": "float64", "longs": "float64", "cases": "dict"}
