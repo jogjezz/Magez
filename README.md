@@ -32,15 +32,33 @@ Run the Docker containers using Docker Compose
 docker-compose up
 ```
 
-open a browser to http://localhost:6789. 
+open a browser to http://localhost:6789
+
 From the pipelines page, select **dbt_demo** and open the notebook view by selecting **Edit pipeline** from the left side nav.
-Select the first block by clicking it and select the “play” icon in the top right to run the block. You’ve just ran your first Mage block & loaded data from a dataset!
+
+Select the first block by clicking it and select the “play” icon in the top right to run the block. 
+
+You’ve just ran your first Mage block & loaded data from a dataset!
 
 
-There are several blocks in this pipeline, it includes load data covid19 , store data to postgres, transforming using DBT and analyze using SQL block
-these are example of analyze queries :
+### Pipeline Overview
 
-#### Top 5 most common values in country_region:
+The pipeline includes the following blocks:
+
+ - Load Data: Ingest COVID-19 data from the source.
+
+ - Store Data: Save the data into a PostgreSQL database.
+
+ - Transform Data: Use DBT for data cleaning and transformation.
+
+ - Analyze Data: Perform SQL-based analysis.
+
+Below is an example image of the pipeline:
+![alt text](image.png)
+
+### Example Analysis Queries
+
+- Top 5 most common values in country_region:
 
 ```sql
 SELECT country_region, COUNT(*) AS frequency
@@ -48,7 +66,6 @@ FROM mrt_covid19_clean_data
 GROUP BY country_region
 ORDER BY frequency DESC
 LIMIT 5;
-
 ```
 
 #### Metric change over time (confirmed cases): 
@@ -70,4 +87,3 @@ ORDER BY
 
 SELECT CORR(confirmed, deaths) AS correlation
 FROM mrt_covid19_clean_data;
-```
