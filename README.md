@@ -65,8 +65,21 @@ Below is an example image of the pipeline:
 
 Upon successfully running the pipelines, you will see the tables and views in PostgreSQL
 
+```sh
+postgres=# \d
+                 List of relations
+ Schema |          Name          | Type  |  Owner   
+--------+------------------------+-------+----------
+ public | covid19_confirmed      | table | postgres
+ public | covid19_deaths         | table | postgres
+ public | covid19_recovered      | table | postgres
+ public | mrt_covid19_clean_data | table | postgres
+ public | stg_covid19_confirmed  | view  | postgres
+ public | stg_covid19_deaths     | view  | postgres
+ public | stg_covid19_recovered  | view  | postgres
+(7 rows)
 
-![alt text](postgres.png)
+```
 
 
 
