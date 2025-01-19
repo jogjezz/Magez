@@ -48,7 +48,7 @@ You have now run your first Mage block and loaded data from a dataset!
 
 The pipeline includes the following blocks:
 
- - **Load Data:** Ingest COVID-19 data from the source.
+ - **Load Data:** Ingest COVID-19 data from the source (confirmed, recovered, deaths).
 
  - **Store Data**: Save the data into a PostgreSQL database.
 
@@ -56,8 +56,20 @@ The pipeline includes the following blocks:
 
  - **Analyze Data**: Perform SQL-based analysis.
 
+
 Below is an example image of the pipeline:
+
+
 ![alt text](image.png)
+
+
+Upon successfully running the pipelines, you will see the tables and views in PostgreSQL
+
+
+![alt text](postgres.png)
+
+
+
 
 ### Example Analysis Queries
 
