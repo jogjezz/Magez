@@ -9,6 +9,17 @@ This project involves transforming COVID-19 data, storing it in a PostgreSQL dat
 ## Dataset
 Use [COVID-19 Data Repository by Johns Hopkins University.](https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data/archived_time_series)
 
+## What inside this repo?
+
+- docker-compose.yml to build Mage and PostgreSQL images.
+
+- Pre-set Mage with pipelines to run.
+
+- Mage connected to PostgreSQL 16.
+
+Basically, you just need to clone and run! :D
+
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -86,7 +97,7 @@ postgres=# \d
 
 ### Example Analysis Queries
 
-- Top 5 most common values in country_region:
+#### Top 5 most common values in country_region:
 
 ```sql
 SELECT country_region, COUNT(*) AS frequency
