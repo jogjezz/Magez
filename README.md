@@ -2,25 +2,29 @@
 Implement Mage.AI to Ingest, Transform, Store, Analysis Data Test
 
 
-## Create network
+# COVID-19 Data Pipeline and Analysis
 
-docker network create magez
+This project involves transforming COVID-19 data, storing it in a PostgreSQL database, and performing complex data analysis. Below are the steps to set up the environment, load data, transform it, and run the analysis.
 
-RUN docker compose up -d
+## Setup Instructions
 
-Launch mage http://localhost:6789
+### Prerequisites
 
-# DBT
+- Docker
+- Docker Compose
 
-go to magic>terminal or open http://localhost:6789/terminal
+### Step 1: Clone the Repository
 
-cd demo_project/dbt
-dbt init -s demo
-touch demo/profiles.yml
+Clone this repository to your local machine:
 
+```sh
+git clone https://github.com/jogjezz/Magez.git
+cd Magez
+```
+### Run Docker Compose
 
-03:12:55  Running with dbt=1.7.4
+Run the Docker containers using Docker Compose
 
-03:12:55  
-
-Your new dbt project "demo" was created!
+```sh
+docker-compose up
+```
