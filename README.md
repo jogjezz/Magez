@@ -7,7 +7,7 @@ Implement Mage.AI to Ingest, Transform, Store, Analysis Data Test
 This project involves transforming COVID-19 data, storing it in a PostgreSQL database, and performing complex data analysis. Below are the steps to set up the environment, load data, transform it, and run the analysis.
 
 ## Dataset
-Use COVID-19 Data Repository by Johns Hopkins University. https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data/archived_time_series
+Use [COVID-19 Data Repository by Johns Hopkins University.](https://github.com/CSSEGISandData/COVID-19/tree/master/archived_data/archived_time_series)
 
 ## Setup Instructions
 
@@ -16,7 +16,7 @@ Use COVID-19 Data Repository by Johns Hopkins University. https://github.com/CSS
 - Docker
 - Docker Compose
 
-### Step 1: Clone the Repository
+### Clone the Repository
 
 Clone this repository to your local machine:
 
@@ -24,6 +24,7 @@ Clone this repository to your local machine:
 git clone https://github.com/jogjezz/Magez.git
 cd Magez
 ```
+
 ### Run Docker Compose
 
 Run the Docker containers using Docker Compose
@@ -32,26 +33,28 @@ Run the Docker containers using Docker Compose
 docker-compose up
 ```
 
-open a browser to http://localhost:6789
+Open a browser and navigate to http://localhost:6789.
 
-From the pipelines page, select **dbt_demo** and open the notebook view by selecting **Edit pipeline** from the left side nav.
+1. From the Pipelines page, select **dbt_demo**.
 
-Select the first block by clicking it and select the “play” icon in the top right to run the block. 
+2. Open the notebook view by selecting **Edit pipeline** from the left-side navigation.
 
-You’ve just ran your first Mage block & loaded data from a dataset!
+3. Select the first block by clicking it and run the block by selecting the **play** icon in the top-right corner.
+
+You have now run your first Mage block and loaded data from a dataset!
 
 
 ### Pipeline Overview
 
 The pipeline includes the following blocks:
 
- - Load Data: Ingest COVID-19 data from the source.
+ - **Load Data:** Ingest COVID-19 data from the source.
 
- - Store Data: Save the data into a PostgreSQL database.
+ - **Store Data**: Save the data into a PostgreSQL database.
 
- - Transform Data: Use DBT for data cleaning and transformation.
+ - **Transform Data**: Use DBT for data cleaning and transformation.
 
- - Analyze Data: Perform SQL-based analysis.
+ - **Analyze Data**: Perform SQL-based analysis.
 
 Below is an example image of the pipeline:
 ![alt text](image.png)
